@@ -14,11 +14,11 @@ This tv box ([WeChip V10](http://www.wechipbox.com/wechip-v10-android-10-allwinn
 
 ## Open it up
 
-The box is full plastic, no screws. The base is held in with plastic clips and can be removed with some plastic shims (or metal srewdriver if you don't mind scratches). The board is held in with three screws, cheaping out by not fixing the fourth corner. The SOC has a heatsink that presses against a thermal pad and tiny metal heat spreader sheet in the top of the case. Based on testing outside the case with only the heatsink, the SOC gets burning hot to touch without even playing any video, just idle system with Termux.
+The box is [full plastic](https://gitea.raspiweb.com:2053/Gerge/Trojan_Horse_in_the_house/src/branch/main/images), no screws. The base is held in with plastic clips and can be removed with some plastic shims (or metal srewdriver if you don't mind scratches). The board is held in with three screws, cheaping out by not fixing the fourth corner. The SOC has a heatsink that presses against a thermal pad and tiny metal heat spreader sheet in the top of the case. Based on testing outside the case with only the heatsink, the SOC gets burning hot to touch without even playing any video, just idle system with Termux.
 
 ## UART
 
-There are is an unpopilated UART connector next to the SD slot that I soldered a header to. The logs are attached, but there is not much useful info.
+There is an unpopilated UART connector next to the SD slot that I soldered a header to. The logs are [attached](https://gitea.raspiweb.com:2053/Gerge/Trojan_Horse_in_the_house/src/branch/main/logs), but there is not much useful info.
 
 # Setup
 
@@ -46,7 +46,7 @@ Malicious:
 103.235.47.161                                          hong kong ??? lighttpd server
 209.100.149.34.bc.googleusercontent.com                 (not secure)
 62.219.107.34.bc.googleusercontent.com                  (not secure)
-ec2-44-239-109-225.us-west-2.compute.amazonaws.com      redirect to location.services.mozilla.com (device is trying to get its location from networks nearby)
+ec2-44-239-109-225.us-west-2.compute.amazonaws.com      redirect to location.services.mozilla.com (trying to get location from networks)
 139-177-186-19.ip.linodeusercontent.com                 (chinese)saletracker login page
 
 ```
@@ -90,7 +90,7 @@ Of-course not everything can be open source:
 
 # Clean and Secure
 
-After removing the malware I ran another `tcpdump` test to see if it has really solved the problem. Right away, it is clear that the box is mostly quiet after boot. There were 24 lines of logs in total. This consisted of DHCP, NTP, and google safe browsing. So it is safe to say that the solution works. Keep in mind that after another reset the malware will return and the same process applies.
+After removing the malware I ran another `tcpdump` test to see if it has really solved the problem. Right away, it is clear that the box is mostly quiet after boot. There were [24 lines of logs in total](https://gitea.raspiweb.com:2053/Gerge/Trojan_Horse_in_the_house/src/branch/main/logs/TCPdump_clean.log). This consisted of DHCP, NTP, and google safe browsing. So it is safe to say that the solution works. Keep in mind that after another reset the malware will return and the same process applies.
 
 # Lessons learned
 
