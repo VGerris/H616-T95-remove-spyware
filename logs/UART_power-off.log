@@ -1,0 +1,118 @@
+[  646.725675] type=1400 audit(1634011692.020:104): avc: denied { net_raw } for comm="FD655_Demo" capability=13 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=1
+[  646.745420] type=1400 audit(1634011707.650:105): avc: denied { write } for comm="InputReader" name="panel" dev="sysfs" ino=20098 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  646.768294] type=1400 audit(1634011707.650:105): avc: denied { write } for comm="InputReader" name="panel" dev="sysfs" ino=20098 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  646.790165] type=1400 audit(1634011707.650:106): avc: denied { open } for comm="InputReader" path="/sys/class/fd655/panel" dev="sysfs" ino=20098 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  646.813619] type=1400 audit(1634011707.650:106): avc: denied { open } for comm="InputReader" path="/sys/class/fd655/panel" dev="sysfs" ino=20098 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  646.836814] type=1400 audit(1634011707.650:107): avc: denied { getattr } for comm="InputReader" path="/sys/class/fd655/panel" dev="sysfs" ino=20098 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  647.538487] type=1400 audit(1634011707.650:107): avc: denied { getattr } for comm="InputReader" path="/sys/class/fd655/panel" dev="sysfs" ino=20098 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  647.561744] type=1400 audit(1634011708.463:108): avc: denied { read } for comm="FD655_Demo" name="vpause_flag" dev="sysfs" ino=20097 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  647.583337] type=1400 audit(1634011708.463:108): avc: denied { read } for comm="FD655_Demo" name="vpause_flag" dev="sysfs" ino=20097 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  647.604483] type=1400 audit(1634011708.463:109): avc: denied { open } for comm="FD655_Demo" path="/sys/class/fd655/vpause_flag" dev="sysfs" ino=20097 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  648.220676] init: Received sys.powerctl='shutdown,' from pid: 2288 (system_server)
+[  648.231211] init: Clear action queue and start shutdown trigger
+[  648.238527] init: processing action (shutdown_done) from (<Builtin Action>:0)
+[  648.247020] init: Reboot start, reason: shutdown,, rebootTarget:
+[  648.303863] init: Shutdown timeout: 6000 ms
+[  648.310847] init: starting service 'blank_screen'...
+[  648.322128] init: starting service 'vendor.light-hal-2-0'...
+[  648.332184] init: terminating init services
+[  648.337296] init: Sending signal 15 to service 'displayservice' (pid 3388) process group...
+[  648.349770] init: Sending signal 15 to service 'vendor.wifi_hal_legacy' (pid 2507) process group...
+
+143|console:/ $ [  649.051509] binder: undelivered TRANSACTION_COMPLETE
+[  649.057108] binder: undelivered transaction 57474, process died.
+[  649.064182] binder: undelivered TRANSACTION_COMPLETE
+[  649.069772] binder: undelivered transaction 57476, process died.
+[  649.079436] binder: undelivered death notification, 00000000eb8f59c0
+[  649.096636] binder: 2022:2022 transaction failed 29189/-22, size 96-0 line 3098
+[  651.338618] vdc: Waited 0ms for vold
+[  651.342942] binder: 1874:1874 transaction failed 29189/-22, size 92-0 line 3098
+[  651.575610] android_work: did not send uevent (0 0           (null))
+[  651.595250] logd.auditd: 77 output lines suppressed due to ratelimiting
+[  652.102164] __rtc_reg_write: write rtc reg success, rtc reg 0x2:0x2
+[  652.109295] will enter boot_start_os
+[  652.114549] sunxi-mmc sdc2: sdc set ios:clk 0Hz bm PP pm OFF vdd 0 width 1 timing LEGACY(SDR12) dt B
+[  652.277709] reboot: Restarting system
+[197]HELLO! SBOOT is starting!
+[200]sboot commit : 803d783
+[203]set pll start
+[205]periph0 has been enabled
+[208]set pll end
+[210]unknow PMU
+[212]unknow PMU
+[214]PMU: AXP1530
+[216]dram return write ok
+[218]board init ok
+[220]rtc[2] value = 0x2
+[222]try to probe rtc region
+[225]DRAM BOOT DRIVE INFO: V0.645
+[228]the chip id is 0x5000
+[231]chip id check OK
+[233]DRAM_VCC set to 1500 mv
+[236]DRAM CLK =600 MHZ
+[238]DRAM Type =3 (3:DDR3,4:DDR4,7:LPDDR3,8:LPDDR4)
+[245]Actual DRAM SIZE =4096 M
+[248]DRAM SIZE =4096 MBytes, para1 = 310b, para2 = 10000000, dram_tpr13 = 6041
+[257]DRAM simple test OK.
+[260]rtc standby flag is 0x0, super standby flag is 0x0
+[265][mmc]: mmc driver ver 2020-09-10 15:32
+[275][mmc]: Wrong media type 0x0, but host sdc2, try mmc first
+[281][mmc]: ***Try MMC card 2***
+[307]mmc_read_info 1138:region magic is not right, retry more time 0
+[324]mmc_read_info 1138:region magic is not right, retry more time 0
+[342]mmc_read_info 1138:region magic is not right, retry more time 0
+[359]mmc_read_info 1138:region magic is not right, go err 0
+[365]dump info registers:[367]
+0x36a04 : [369]0 [369]0 [370]0 [371]0 [371]
+[372][mmc]: RMCA FAIL!
+[374][mmc]: mmc read timing info fail
+[378][mmc]: wrong freq 2 at spd md 2
+[382][mmc]: force 25m
+[384][mmc]: bias 0
+[387][mmc]: MMC 4.5
+[389][mmc]: HSSDR52/SDR25 8 bit
+[392][mmc]: 25000000 Hz
+[395][mmc]: 29820 MB
+[397][mmc]: ***SD/MMC 2 init OK!!!***
+[515]read toc1 from emmc 32800 sector
+[518]OLD version: 0.0
+[520]NEW version: 0.0
+[596]load rotpk hash
+[659]load monitor-key hash
+[662]load monitor hash
+[866]load boot-key hash
+[869]load boot hash
+[935]load vbmeta-key hash
+[937]load vbmeta hash
+[1005]load recovery-key hash
+[1008]load recovery hash
+[1011]monitor entry=0x48000000
+[1014]uboot entry=0x4a000000
+[1017]optee entry=0x48600000
+[1020]mmc not para
+[1024]run out of boot0
+NOTICE:  BL3-1: v1.0(debug):be96482
+NOTICE:  BL3-1: Built : 18:32:32, 2021-04-21
+NOTICE:  BL3-1 commit: 8
+NOTICE:  cpuidle init version V1.0
+NOTICE:  secure os exist
+MESSAGE: [0x0] TEE-CORE: OP-TEE version: 5c40397e #1 Tue Feb  2 07:45:37 UTC 2021 arm
+NOTICE:  BL3-1: Preparing for EL3 exit to normal world
+NOTICE:  BL3-1: Next image address = 0x4a000000
+NOTICE:  BL3-1: Next image spsr = 0x1d3
+
+U-Boot 2018.05 (Oct 12 2021 - 11:40:11 +0800) Allwinner Technology
+
+[01.115]CPU:   Allwinner Family
+[01.118]Model: sun50iw9
+I2C:   ready
+[01.123]DRAM:  2 GiB
+[01.126]Relocation Offset is: 75ec5000
+[01.165]secure enable bit: 1
+[01.168]pmu_axp152_probe pmic_bus_read fail
+[01.172]PMU: AXP1530
+[01.178]CPU=1008 MHz,PLL6=600 Mhz,AHB=200 Mhz, APB1=100Mhz  MBus=400Mhz
+[01.186]drv_disp_init
+[01.215]__clk_enable: clk is null.
+[01.221]drv_disp_init finish
+[01.224]gic: sec monitor mode

@@ -1,0 +1,981 @@
+[327]HELLO! SBOOT is starting!
+[330]sboot commit : 803d783
+[333]set pll start
+[335]periph0 has been enabled
+[338]set pll end
+[340]unknow PMU
+[342]unknow PMU
+[343]PMU: AXP1530
+[345]dram return write ok
+[348]board init ok
+[350]try to probe rtc region
+[352]DRAM BOOT DRIVE INFO: V0.645
+[356]the chip id is 0x5000
+[358]chip id check OK
+[363]DRAM_VCC set to 1500 mv
+[366]DRAM CLK =600 MHZ
+[368]DRAM Type =3 (3:DDR3,4:DDR4,7:LPDDR3,8:LPDDR4)
+[375]Actual DRAM SIZE =4096 M
+[378]DRAM SIZE =4096 MBytes, para1 = 310b, para2 = 10000000, dram_tpr13 = 6041
+[387]DRAM simple test OK.
+[389]rtc standby flag is 0x0, super standby flag is 0x0
+[395][mmc]: mmc driver ver 2020-09-10 15:32
+[404][mmc]: Wrong media type 0x0, but host sdc2, try mmc first
+[410][mmc]: ***Try MMC card 2***
+[438]mmc_read_info 1138:region magic is not right, retry more time 0
+[455]mmc_read_info 1138:region magic is not right, retry more time 0
+[473]mmc_read_info 1138:region magic is not right, retry more time 0
+[490]mmc_read_info 1138:region magic is not right, go err 0
+[496]dump info registers:[498]
+0x36a04 : [500]0 [500]0 [501]0 [502]0 [502]
+[503][mmc]: RMCA FAIL!
+[505][mmc]: mmc read timing info fail
+[509][mmc]: wrong freq 2 at spd md 2
+[513][mmc]: force 25m
+[515][mmc]: bias 0
+[518][mmc]: MMC 4.5
+[520][mmc]: HSSDR52/SDR25 8 bit
+[523][mmc]: 25000000 Hz
+[526][mmc]: 29820 MB
+[528][mmc]: ***SD/MMC 2 init OK!!!***
+[645]read toc1 from emmc 32800 sector
+[649]OLD version: 0.0
+[651]NEW version: 0.0
+[727]load rotpk hash
+[790]load monitor-key hash
+[793]load monitor hash
+[997]load boot-key hash
+[1000]load boot hash
+[1066]load vbmeta-key hash
+[1068]load vbmeta hash
+[1136]load recovery-key hash
+[1139]load recovery hash
+[1142]monitor entry=0x48000000
+[1145]uboot entry=0x4a000000
+[1148]optee entry=0x48600000
+[1151]mmc not para
+[1155]run out of boot0
+NOTICE:  BL3-1: v1.0(debug):be96482
+NOTICE:  BL3-1: Built : 18:32:32, 2021-04-21
+NOTICE:  BL3-1 commit: 8
+NOTICE:  cpuidle init version V1.0
+NOTICE:  secure os exist
+MESSAGE: [0x0] TEE-CORE: OP-TEE version: 5c40397e #1 Tue Feb  2 07:45:37 UTC 2021 arm
+NOTICE:  BL3-1: Preparing for EL3 exit to normal world
+NOTICE:  BL3-1: Next image address = 0x4a000000
+NOTICE:  BL3-1: Next image spsr = 0x1d3
+
+U-Boot 2018.05 (Oct 12 2021 - 11:40:11 +0800) Allwinner Technology
+
+[01.247]CPU:   Allwinner Family
+[01.250]Model: sun50iw9
+I2C:   ready
+[01.254]DRAM:  2 GiB
+[01.257]Relocation Offset is: 75ec5000
+[01.297]secure enable bit: 1
+[01.299]pmu_axp152_probe pmic_bus_read fail
+[01.303]PMU: AXP1530
+[01.309]CPU=1008 MHz,PLL6=600 Mhz,AHB=200 Mhz, APB1=100Mhz  MBus=400Mhz
+[01.317]drv_disp_init
+[01.347]__clk_enable: clk is null.
+[01.352]drv_disp_init finish
+[01.355]gic: sec monitor mode
+[01.382]flash init start
+[01.385]workmode = 0,storage type = 2
+[01.388]MMC:	 2
+[01.389]get mem for descripter OK !
+[01.398]get sdc2 sdc_boot0_sup_1v8 fail.
+[01.403]io is 1.8V
+
+[01.425]rto or no error or software timeout,no need retry
+[01.433]already at HSSDR52_SDR25 mode
+[03.608]speed mode: HSSDR52/SDR25
+[03.611]---400000Hz:
+[03.613]--best 255
+[03.614]---25000000Hz:
+[03.617]--best 255
+[03.618]---50000000Hz:
+[03.621]--best 24
+[03.622]already at HSSDR52_SDR25 mode
+[03.626]already at HSSDR52_SDR25 mode
+[03.629]sunxi flash init ok
+[03.633]Loading Environment from SUNXI_FLASH... OK
+secure storage read hdcpkey fail
+[03.647]secure storage read hdcpkey fail with:-1
+secure storage read widevine fail
+[03.654]secure storage read widevine fail with:-1
+[03.660]usb burn from boot
+delay time 0
+weak:otg_phy_config
+[03.673]usb prepare ok
+[04.476]overtime
+[04.480]do_burn_from_boot usb : no usb exist
+[04.484]boot_gui_init:start
+FAT: Misaligned buffer address (bbe7e678)
+34 bytes read in 4 ms (7.8 KiB/s)
+[04.624]boot_gui_init:finish
+[04.627]bmp_name=bootlogo.bmp
+2764856 bytes read in 61 ms (43.2 MiB/s)
+[04.709]get max-frequency ok 100000000 Hz
+[04.712]1 1 1: 1 1 1
+[04.714]delete mmc-hs400-1_8v from dtb
+[04.718]delete mmc-hs200-1_8v from dtb
+[04.721]delete mmc-ddr-1_8v from dtb
+[04.724]get max-frequency ok 50000000 Hz
+[04.737]update dts
+** Unrecognized filesystem type **
+[04.753]load file(ULI/factory/rootwait init.txt) error.
+** Unrecognized filesystem type **
+[04.773]load file(ULI/factory/snum.txt) error.
+[04.777]name in map mac
+** Unrecognized filesystem type **
+[04.794]load file(ULI/factory/wifi_mac.txt) error.
+** Unrecognized filesystem type **
+[04.813]load file(ULI/factory/bt_mac.txt) error.
+** Unrecognized filesystem type **
+[04.832]load file(ULI/factory/selinux.txt) error.
+** Unrecognized filesystem type **
+[04.851]load file(ULI/factory/specialstr.txt) error.
+[04.870]update part info
+[04.895]update bootcmd
+[04.897]No ethernet found.
+Hit any key to stop autoboot:  0
+[05.426]not supported key
+[05.428]actual n size:1000, e:10001
+[05.431]exptect n size:800, e:10001
+show hash of file
+54 4a b6 10 19 6c 97 37 bc 52 d2 63 88 63 7e cb
+a9 b0 a4 7f 58 be 72 8a 91 8a d7 5c 35 d2 36 6f
+
+image vbmeta hash valid
+CACHE: Misaligned operation at range [44ffffe0, 46258000]
+[05.604]Starting kernel ...
+
+[05.606]mmc exit start
+[05.628]mmc 2 exit ok
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.9.170 (cmj@linux-PowerEdge-R730) (gcc version 5.3.1 20160412 (Linaro GCC 5.3-2016.05) ) #1 SMP PREEMPT Tue Oct 12 11:42:50 CST 2021
+[    0.000000] Boot CPU: AArch64 Processor [410fd034]
+[    0.000000] bootconsole [earlycon0] enabled
+[    0.000000] disp reserve base 0xbbf4eb80 ,size 0x384000
+[    0.000000] cma: Reserved 64 MiB at 0x00000000fc000000
+[    0.000000] On node 0 totalpages: 1048576
+[    0.000000]   DMA zone: 12288 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 786432 pages, LIFO batch:31
+[    0.000000]   Normal zone: 4096 pages used for memmap
+[    0.000000]   Normal zone: 262144 pages, LIFO batch:31
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 22 pages/cpu @ffffffc0ffef5000 s49280 r8192 d32640 u90112
+[    0.000000] pcpu-alloc: s49280 r8192 d32640 u90112 alloc=22*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: enabling workaround for ARM erratum 845719
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 1032192
+[    0.000000] Kernel command line: earlyprintk=sunxi-uart,0x05000000 initcall_debug=0 console=ttyS0,115200 loglevel=8 root=/dev/mmcblk0p4 rootwait init=/init partitions=bootloader@mmcblk0p1:env@mmcblk0p2:boot@mmcblk0p3:super@mmcblk0p4:misc@mmcblk0p5:recovery@mmcblk0p6:cache@mmcblk0p7:vbmeta@mmcblk0p8:vbmeta_system@mmcblk0p9:vbmeta_vendor@mmcblk0p10:metadata@mmcblk0p11:private@mmcblk0p12:frp@mmcblk0p13:empty@mmcblk0p14:media_data@mmcblk0p15:Reserve0@mmcblk0p16:UDISK@mmcblk0p17 cma=64M snum=1c0014217413c8f20ce mac_addr=C4:2A:FE:81:49:91 wifi_mac= bt_mac= selinux=0 specialstr= gpt=1 androidboot.vbmeta.avb_version=2.0 androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=6976 androidboot.vbmeta.digest=56559e6c0504c369db29939ebe9053b212a249e57303fd79084625a83e31aaf2 androidboot.vbmeta.device_state=locked androidboot.mode=normal androidboot.serialno=1c0014217413c8f20ce androidboot.hardware=sun50iw9p1 boot_type=2 androidboot.boot_type=2 androidboot.secure_os_exist=1 gpt=1 androidboot.verifi[    0.000000] log_buf_len individual max cpu contribution: 4096 bytes
+[    0.000000] log_buf_len total cpu_extra contributions: 12288 bytes
+[    0.000000] log_buf_len min size: 16384 bytes
+[    0.000000] log_buf_len: 32768 bytes
+[    0.000000] early log buf free: 13712(83%)
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.000000] software IO TLB: mapped [mem 0xf7fff000-0xfbfff000] (64MB)
+[    0.000000] Memory: 3872372K/4194304K available (9982K kernel code, 1318K rwdata, 3820K rodata, 2752K init, 510K bss, 256396K reserved, 65536K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     modules : 0xffffff8000000000 - 0xffffff8008000000   (   128 MB)
+[    0.000000]     vmalloc : 0xffffff8008000000 - 0xffffffbebfff0000   (   250 GB)
+[    0.000000]       .text : 0xffffff8008080000 - 0xffffff8008a40000   (  9984 KB)
+[    0.000000]     .rodata : 0xffffff8008a40000 - 0xffffff8008e00000   (  3840 KB)
+[    0.000000]       .init : 0xffffff8008e00000 - 0xffffff80090b0000   (  2752 KB)
+[    0.000000]       .data : 0xffffff80090b0000 - 0xffffff80091f9808   (  1319 KB)
+[    0.000000]        .bss : 0xffffff80091f9808 - 0xffffff80092792d8   (   511 KB)
+[    0.000000]     fixed   : 0xffffffbefe7fb000 - 0xffffffbefec00000   (  4116 KB)
+[    0.000000]     PCI I/O : 0xffffffbefee00000 - 0xffffffbeffe00000   (    16 MB)
+[    0.000000]     vmemmap : 0xffffffbf00000000 - 0xffffffc000000000   (     4 GB maximum)
+[    0.000000]               0xffffffbf00000000 - 0xffffffbf04000000   (    64 MB actual)
+[    0.000000]     memory  : 0xffffffc000000000 - 0xffffffc100000000   (  4096 MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] NR_IRQS:64 nr_irqs:64 0
+[    0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000000] arm_arch_timer: Architected cp15 timer(s) running at 24.00MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000006] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.008193] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=80000)
+[    0.018197] pid_max: default: 32768 minimum: 301
+[    0.023003] Security Framework initialized
+[    0.026876] SELinux:  Initializing.
+[    0.030463] SELinux:  Starting in permissive mode
+[    0.035124] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.041696] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.050101] sched-energy: CPU device node has no sched-energy-costs
+[    0.055089] Invalid sched_group_energy for CPU0
+[    0.059548] CPU0: update cpu_capacity 1024
+[    0.073673] ASID allocator initialised with 32768 entries
+[    0.092588] BOOTEVENT:        92.571832: ON
+[    0.120697] Detected VIPT I-cache on CPU1
+[    0.120751] Invalid sched_group_energy for CPU1
+[    0.120755] CPU1: update cpu_capacity 1024
+[    0.120758] CPU1: Booted secondary processor [410fd034]
+[    0.144088] Detected VIPT I-cache on CPU2
+[    0.144128] Invalid sched_group_energy for CPU2
+[    0.144131] CPU2: update cpu_capacity 1024
+[    0.144134] CPU2: Booted secondary processor [410fd034]
+[    0.167493] Detected VIPT I-cache on CPU3
+[    0.167530] Invalid sched_group_energy for CPU3
+[    0.167533] CPU3: update cpu_capacity 1024
+[    0.167536] CPU3: Booted secondary processor [410fd034]
+[    0.167629] Brought up 4 CPUs
+[    0.201627] SMP: Total of 4 processors activated.
+[    0.206317] CPU features: detected feature: 32-bit EL0 Support
+[    0.212122] CPU features: detected feature: Kernel page table isolation (KPTI)
+[    0.222745] CPU: All CPU(s) started at EL1
+[    0.223394] alternatives: patching kernel code
+[    0.227978] Invalid sched_group_energy for CPU3
+[    0.232321] CPU3: update max cpu_capacity 1024
+[    0.236735] Invalid sched_group_energy for Cluster3
+[    0.241588] Invalid sched_group_energy for CPU2
+[    0.246095] Invalid sched_group_energy for Cluster2
+[    0.250948] Invalid sched_group_energy for CPU1
+[    0.255455] Invalid sched_group_energy for Cluster1
+[    0.260307] Invalid sched_group_energy for CPU0
+[    0.264815] Invalid sched_group_energy for Cluster0
+[    0.270649] CPU1: update max cpu_capacity 1024
+[    0.274846] devtmpfs: initialized
+[    0.317056] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+[    0.317156] futex hash table entries: 1024 (order: 5, 131072 bytes)
+[    0.319232] atomic64_test: passed
+[    0.319277] pinctrl core: initialized pinctrl subsystem
+[    0.320591] NET: Registered protocol family 16
+[    0.325179] dump_class_init,861, success
+[    0.351010] cpuidle: using governor menu
+[    0.352606] sunxi iommu: irq = 8
+[    0.353513] vdso: 2 pages (1 code @ ffffff8008a48000, 1 data @ ffffff80090b4000)
+[    0.353592] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.354970] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.357366] sun50iw9p1-r-pinctrl r_pio: initialized sunXi PIO driver
+[    0.377038] sun50iw9p1-pinctrl pio: initialized sunXi PIO driver
+[    0.381190] iommu: Adding device 1c0e000.ve to group 0
+[    0.381815] iommu: Adding device 1c00000.vp9 to group 0
+[    0.393706] iommu: Adding device 1000000.disp to group 0
+[    0.395512] iommu: Adding device 1480000.g2d to group 0
+[    0.399120] iommu: Adding device csi0 to group 0
+[    0.399725] iommu: Adding device csi1 to group 0
+[    0.400948] iommu: Adding device 6600800.vind:scaler@0 to group 0
+[    0.404874] iommu: Adding device 6600800.vind:scaler@1 to group 0
+[    0.410930] iommu: Adding device 6600800.vind:scaler@2 to group 0
+[    0.416956] iommu: Adding device 6600800.vind:scaler@3 to group 0
+[    0.423042] iommu: Adding device 6600800.vind:scaler@4 to group 0
+[    0.429098] iommu: Adding device 6600800.vind:scaler@5 to group 0
+[    0.435837] iommu: Adding device vinc0 to group 0
+[    0.440008] iommu: Adding device vinc1 to group 0
+[    0.445765] iommu: Adding device 1420000.deinterlace to group 0
+[    0.492256] pwm module init!
+[    0.496837] sunxi-pm debug v3.10
+[    0.498029] SCSI subsystem initialized
+[    0.498550] usbcore: registered new interface driver usbfs
+[    0.498688] usbcore: registered new interface driver hub
+[    0.498874] usbcore: registered new device driver usb
+[    0.499087] sunxi_i2c_adap_init()2522 - init
+[    0.502046] sunxi_i2c_probe()2209 - [i2c3] warning: failed to get regulator id
+[    0.508851] sunxi_i2c_probe()2271 - [i2c3] twi_drv_used = 0
+[    0.514304] sunxi_i2c_probe()2275 - [i2c3] twi_pkt_interval = 0
+[    0.520200] twi3 supply twi not found, using dummy regulator
+[    0.525920] twi_request_gpio()452 - [i2c3] init name: twi3
+[    0.532054] sunxi_i2c_probe()2209 - [i2c5] warning: failed to get regulator id
+[    0.538575] sunxi_i2c_probe()2271 - [i2c5] twi_drv_used = 0
+[    0.544039] sunxi_i2c_probe()2275 - [i2c5] twi_pkt_interval = 0
+[    0.549930] twi5 supply twi not found, using dummy regulator
+[    0.555636] twi_request_gpio()452 - [i2c5] init name: twi5
+[    0.561486] axp20x-i2c 5-0036: AXP20x variant AXP1530 found
+[    0.567172] axp2101-regulator axp2101-regulator.0: Setting DCDC frequency for unsupported AXP variant
+[    0.575764] axp2101-regulator axp2101-regulator.0: Error setting dcdc frequency: -22
+[    0.593021] axp20x-i2c 5-0036: AXP20X driver loaded
+[    0.593624] media: Linux media interface: v0.10
+[    0.593747] Linux video capture interface: v2.00
+[    0.598677] ion_parse_dt_heap_common: id 0 type 0 name sys_user align 1000
+[    0.604533] ion_parse_dt_heap_common: id 4 type 4 name cma align 1000
+[    0.610880] ion_parse_dt_heap_common: id 6 type 6 name secure align 1000
+[    0.617724] drm_base=0xbb000000
+[    0.620450] drm_size=0x5000000
+[    0.623508] tee_base=0x2000000
+[    0.627088] Advanced Linux Sound Architecture Driver Initialized.
+[    0.633340] Bluetooth: Core ver 2.22
+[    0.636263] NET: Registered protocol family 31
+[    0.640577] Bluetooth: HCI device and connection manager initialized
+[    0.646914] Bluetooth: HCI socket layer initialized
+[    0.651756] Bluetooth: L2CAP socket layer initialized
+[    0.656828] Bluetooth: SCO socket layer initialized
+[    0.662550] [DISP]disp_module_init
+[    0.666339] [DISP] disp_init,line:2216:
+[    0.668674] smooth display screen:0 type:4 mode:10
+[    0.683922] [DISP]disp_module_init finish
+[    0.685455] acx00_detect, l:429, twi_id:3, adapter->nr:3
+[    0.685724] acx00_i2c_probe,l:282
+[    0.686252] [ac200] pwm is NULL! Just initialize it.
+[    0.691873] [ac200] pwm enable
+[    0.694116] [ac200] pwm is initialized
+[    0.697901] acx00_init_work,l:130
+[    0.699453] sunxi_i2c_do_xfer()1935 - [i2c5] incomplete xfer (status: 0x20, dev addr: 0x10)
+[    0.699903] of_property_read_string ac200.tv_regulator_name fail
+[    0.699906] [ac200] get ave_regulator_name failed!
+[    0.701175] clocksource: Switched to clocksource arch_sys_counter
+[    0.701431] VFS: Disk quotas dquot_6.6.0
+[    0.701526] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.704703] udc_init,0
+[    0.706187] NET: Registered protocol family 2
+[    0.731538] TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.731787] TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+[    0.732315] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.732423] UDP hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.732513] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.733016] NET: Registered protocol family 1
+[    0.733632] RPC: Registered named UNIX socket transport module.
+[    0.733636] RPC: Registered udp transport module.
+[    0.733638] RPC: Registered tcp transport module.
+[    0.733640] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.733922] Trying to unpack rootfs image as initramfs...
+[    0.762110] Freeing initrd memory: 752K
+[    0.764041] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.7658�i������� R/W].
+[    0.781631] fuse init (API version 7.26)
+[    0.784122] SELinux:  Registering netfilter hooks
+[    0.834871] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    0.834881] io scheduler noop registered
+[    0.834885] io scheduler deadline registered
+[    0.835172] io scheduler cfq registered (default)
+[    0.837215] failed to get standby led pin assign
+[    0.837300] gpio_pin_1(244) gpio_is_valid
+[    0.837547] gpio_pin_2(245) gpio_is_valid
+[    0.838073] gpio name is PH20, ret = 0
+[    0.838292] gpio name is PH21, ret = 0
+[    0.838466] gpio_init finish with uesd
+[    0.840149] reg-virt-consumer.1 supply dcdc1 not found, using dummy regulator
+[    0.840304] reg-virt-consumer.2 supply dcdc2 not found, using dummy regulator
+[    0.840422] reg-virt-consumer.3 supply dcdc3 not found, using dummy regulator
+[    0.840539] reg-virt-consumer.4 supply aldo1 not found, using dummy regulator
+[    0.840654] reg-virt-consumer.5 supply dldo1 not found, using dummy regulator
+[    0.842300] uart uart0: get regulator failed
+[    0.842492] uart0: ttyS0 at MMIO 0x5000000 (irq = 280, base_baud = 1500000) is a SUNXI
+[    0.842511] sw_console_setup()1709 - console setup baud 115200 parity n bits 8, flow n
+[    0.930088] console [ttyS0] enabled
+[    0.930088] console [ttyS0] enabled
+[    0.930704] acx00_init_work,l:137
+[    0.930704] acx00_init_work,l:137
+[    0.963388] bootconsole [earlycon0] disabled
+[    0.963388] bootconsole [earlycon0] disabled
+[    0.972422] uart uart1: get regulator failed
+[    0.980713] uart1: ttyS1 at MMIO 0x5000400 (irq = 281, base_baud = 1500000) is a SUNXI
+[    0.990924] misc dump reg init
+[    0.995703] deinterlace 1420000.deinterlace: version[1.0.0], ip=0x300100
+[    1.003661] Unable to detect cache hierarchy for CPU 0
+[    1.024256] brd: module loaded
+[    1.036339] loop: module loaded
+[    1.040980] zram: Added device: zram0
+[    1.045349] [NAND][NE] Not found valid nand node on dts
+[    1.052030] Boot type 2
+[    1.055489] sunxi-bt soc@03000000:bt: Missing bt_power.
+[    1.061396] sunxi-bt soc@03000000:bt: bt_power_name ((null))
+[    1.067781] sunxi-bt soc@03000000:bt: Missing bt_io_regulator.
+[    1.074362] sunxi-bt soc@03000000:bt: io_regulator_name ((null))
+[    1.081197] sunxi-bt soc@03000000:bt: bt_rst gpio=211  mul-sel=1  pull=-1  drv_level=-1  data=0
+[    1.091069] sunxi-bt soc@03000000:bt: devm_pinctrl_get() failed!
+[    1.098835] sunxi-wlan soc@03000000:wlan: wlan_busnum (1)
+[    1.104954] sunxi-wlan soc@03000000:wlan: Missing wlan_power.
+[    1.111429] sunxi-wlan soc@03000000:wlan: wlan_power_name ((null))
+[    1.118396] sunxi-wlan soc@03000000:wlan: Missing wlan_io_regulator.
+[    1.125553] sunxi-wlan soc@03000000:wlan: io_regulator_name ((null))
+[    1.132748] sunxi-wlan soc@03000000:wlan: wlan_regon gpio=210  mul-sel=1  pull=-1  drv_level=-1  data=0
+[    1.143355] sunxi-wlan soc@03000000:wlan: get gpio chip_en failed
+[    1.150225] sunxi-wlan soc@03000000:wlan: get gpio power_en failed
+[    1.157203] sunxi-wlan soc@03000000:wlan: wlan_hostwake gpio=207  mul-sel=6  pull=-1  drv_level=-1  data=0
+[    1.169194] [ADDR_MGT] addr_mgt_probe: success.
+[    1.185718] libphy: Fixed MDIO Bus: probed
+[    1.190380] tun: Universal TUN/TAP device driver, 1.6
+[    1.196080] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.204331] gmac-power0: NULL
+[    1.207718] gmac-power1: NULL
+[    1.211070] gmac-power2: NULL
+[    1.215345] PPP generic driver version 2.4.2
+[    1.220505] PPP BSD Compression module registered
+[    1.225822] PPP Deflate Compression module registered
+[    1.231538] PPP MPPE Compression module registered
+[    1.236938] NET: Registered protocol family 24
+[    1.241978] PPTP driver version 0.8.5
+[    1.246436] usbcore: registered new interface driver r8152
+[    1.252709] usbcore: registered new interface driver asix
+[    1.258892] usbcore: registered new interface driver ax88179_178a
+[    1.265839] usbcore: registered new interface driver cdc_ether
+[    1.272483] usbcore: registered new interface driver net1080
+[    1.278935] usbcore: registered new interface driver cdc_subset
+[    1.285684] usbcore: registered new interface driver zaurus
+[    1.292077] usbcore: registered new interface driver cdc_ncm
+[    1.298457] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.306202] get drv_vbus is fail, 84
+[    1.310242] get ehci0-controller, regulator_io is no nocare
+[    1.316802] [sunxi-ehci0]: probe, pdev->name: 5101000.ehci0-controller, sunxi_ehci: 0xffffff80092636f0, 0x:ffffff8009d7e000, irq_no:11d
+[    1.330561] sunxi-ehci 5101000.ehci0-controller: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.340774] sunxi-ehci 5101000.ehci0-controller: new USB bus registered, assigned bus number 1
+[    1.350866] sunxi-ehci 5101000.ehci0-controller: irq 285, io mem 0xffffff8009d7e000
+[    1.371189] sunxi-ehci 5101000.ehci0-controller: USB 0.0 started, EHCI 1.00
+[    1.380167] hub 1-0:1.0: USB hub found
+[    1.384457] hub 1-0:1.0: 1 port detected
+[    1.389622] get ehci1-controller, regulator_io is no nocare
+[    1.396196] [sunxi-ehci1]: probe, pdev->name: 5200000.ehci1-controller, sunxi_ehci: 0xffffff8009263a38, 0x:ffffff8009e3e000, irq_no:11f
+[    1.409969] sunxi-ehci 5200000.ehci1-controller: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.420177] sunxi-ehci 5200000.ehci1-controller: new USB bus registered, assigned bus number 2
+[    1.430107] sunxi-ehci 5200000.ehci1-controller: irq 287, io mem 0xffffff8009e3e000
+[    1.451189] sunxi-ehci 5200000.ehci1-controller: USB 0.0 started, EHCI 1.00
+[    1.460056] hub 2-0:1.0: USB hub found
+[    1.464353] hub 2-0:1.0: 1 port detected
+[    1.469497] get drv_vbus is fail, 84
+[    1.473539] get ehci2-controller, regulator_io is no nocare
+[    1.480093] [sunxi-ehci2]: probe, pdev->name: 5310000.ehci2-controller, sunxi_ehci: 0xffffff8009263d80, 0x:ffffff8009eda000, irq_no:121
+[    1.494589] sunxi-ehci 5310000.ehci2-controller: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.504817] sunxi-ehci 5310000.ehci2-controller: new USB bus registered, assigned bus number 3
+[    1.514744] sunxi-ehci 5310000.ehci2-controller: irq 289, io mem 0xffffff8009eda000
+[    1.534518] sunxi-ehci 5310000.ehci2-controller: USB 0.0 started, EHCI 1.00
+[    1.543417] hub 3-0:1.0: USB hub found
+[    1.547703] hub 3-0:1.0: 1 port detected
+[    1.552845] get drv_vbus is fail, 84
+[    1.556888] get ehci3-controller, regulator_io is no nocare
+[    1.563430] [sunxi-ehci3]: probe, pdev->name: 5311000.ehci3-controller, sunxi_ehci: 0xffffff80092640c8, 0x:ffffff8009ee4000, irq_no:123
+[    1.577184] sunxi-ehci 5311000.ehci3-controller: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.587400] sunxi-ehci 5311000.ehci3-controller: new USB bus registered, assigned bus number 4
+[    1.597324] sunxi-ehci 5311000.ehci3-controller: irq 291, io mem 0xffffff8009ee4000
+[    1.617856] sunxi-ehci 5311000.ehci3-controller: USB 0.0 started, EHCI 1.00
+[    1.626740] hub 4-0:1.0: USB hub found
+[    1.631026] hub 4-0:1.0: 1 port detected
+[    1.636527] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.643921] get drv_vbus is fail, 84
+[    1.647970] get ohci0-controller, regulator_io is no nocare
+[    1.655525] [sunxi-ohci0]: probe, pdev->name: 5101000.ohci0-controller, sunxi_ohci: 0xffffff80092629d0
+[    1.666055] sunxi-ohci 5101000.ohci0-controller: SW USB2.0 'Open' Host Controller (OHCI) Driver
+[    1.675879] sunxi-ohci 5101000.ohci0-controller: new USB bus registered, assigned bus number 5
+[    1.685651] sunxi-ohci 5101000.ohci0-controller: irq 286, io mem 0x00000040
+[    1.752865] hub 5-0:1.0: USB hub found
+[    1.757150] hub 5-0:1.0: 1 port detected
+[    1.762315] get ohci1-controller, regulator_io is no nocare
+[    1.768856] hci: request ohci1-controller gpio:232
+[    1.774359] [sunxi-ohci1]: probe, pdev->name: 5200000.ohci1-controller, sunxi_ohci: 0xffffff8009262d18
+[    1.784888] sunxi-ohci 5200000.ohci1-controller: SW USB2.0 'Open' Host Controller (OHCI) Driver
+[    1.794715] sunxi-ohci 5200000.ohci1-controller: new USB bus registered, assigned bus number 6
+[    1.804502] sunxi-ohci 5200000.ohci1-controller: irq 288, io mem 0x00000040
+[    1.872854] hub 6-0:1.0: USB hub found
+[    1.877143] hub 6-0:1.0: 1 port detected
+[    1.882274] get drv_vbus is fail, 84
+[    1.886317] get ohci2-controller, regulator_io is no nocare
+[    1.892949] [sunxi-ohci2]: probe, pdev->name: 5310000.ohci2-controller, sunxi_ohci: 0xffffff8009263060
+[    1.903483] sunxi-ohci 5310000.ohci2-controller: SW USB2.0 'Open' Host Controller (OHCI) Driver
+[    1.913307] sunxi-ohci 5310000.ohci2-controller: new USB bus registered, assigned bus number 7
+[    1.923080] sunxi-ohci 5310000.ohci2-controller: irq 290, io mem 0x00000040
+[    1.989665] hub 7-0:1.0: USB hub found
+[    1.993947] hub 7-0:1.0: 1 port detected
+[    1.999085] get drv_vbus is fail, 84
+[    2.003126] get ohci3-controller, regulator_io is no nocare
+[    2.009756] [sunxi-ohci3]: probe, pdev->name: 5311000.ohci3-controller, sunxi_ohci: 0xffffff80092633a8
+[    2.020283] sunxi-ohci 5311000.ohci3-controller: SW USB2.0 'Open' Host Controller (OHCI) Driver
+[    2.030107] sunxi-ohci 5311000.ohci3-controller: new USB bus registered, assigned bus number 8
+[    2.039881] sunxi-ohci 5311000.ohci3-controller: irq 292, io mem 0x00000040
+[    2.109493] hub 8-0:1.0: USB hub found
+[    2.113778] hub 8-0:1.0: 1 port detected
+[    2.119404] usbcore: registered new interface driver uas
+[    2.125635] usbcore: registered new interface driver usb-storage
+[    2.132519] usbcore: registered new interface driver ums-alauda
+[    2.139274] usbcore: registered new interface driver ums-cypress
+[    2.146130] usbcore: registered new interface driver ums-datafab
+[    2.152989] usbcore: registered new interface driver ums_eneub6250
+[    2.160040] usbcore: registered new interface driver ums-freecom
+[    2.166892] usbcore: registered new interface driver ums-isd200
+[    2.173652] usbcore: registered new interface driver ums-jumpshot
+[    2.180601] usbcore: registered new interface driver ums-karma
+[    2.187261] usbcore: registered new interface driver ums-onetouch
+[    2.194230] usbcore: registered new interface driver ums-realtek
+[    2.201096] usbcore: registered new interface driver ums-sddr09
+[    2.207879] usbcore: registered new interface driver ums-sddr55
+[    2.214638] usbcore: registered new interface driver ums-usbat
+[    2.221530] usb_serial_number:20080411
+[    2.227058] input: sunxi-keyboard as /devices/virtual/input/input0
+[    2.234777] usbcore: registered new interface driver xpad
+[    2.240991] usbcore: registered new interface driver usb_acecad
+[    2.247774] usbcore: registered new interface driver aiptek
+[    2.254157] usbcore: registered new interface driver gtco
+[    2.260355] usbcore: registered new interface driver hanwang
+[    2.266833] usbcore: registered new interface driver kbtab
+[    2.273822] axp2101_pek: axp2101-pek can not register without irq
+[    2.280717] axp2101-pek: probe of axp2101-pek.0 failed with error -22
+[    2.289547] sunxi-rtc rtc: rtc core: registered sunxi-rtc as rtc0
+[    2.296494] sunxi-rtc rtc: RTC enabled
+[    2.300745] sunxi_rtc_probe: bootup extend state 1
+[    2.306742] i2c /dev entries driver
+[    2.311474] IR NEC protocol handler initialized
+[    2.316599] IR RC5(x/sz) protocol handler initialized
+[    2.322812] sunxi_ir_startup: get ir protocol failed
+[    2.328287] 7040000.s_cir supply ir0 not found, using dummy regulator
+[    2.335986] Registered IR keymap rc_map_sunxi
+[    2.341299] input: sunxi-ir as /devices/platform/soc/7040000.s_cir/rc/rc0/input1
+[    2.349912] rc rc0: sunxi-ir as /devices/platform/soc/7040000.s_cir/rc/rc0
+[    2.358698] sunxi cedar version 0.1
+[    2.362815] VE: install start!!!
+[    2.362815]
+[    2.368279] cedar_ve: cedar-ve the get irq is 278
+[    2.374040] VE: get debugfs_mpp_root is NULL, please check mpp
+[    2.374040]
+[    2.382289] VE: sunxi ve debug register driver failed!
+[    2.382289]
+[    2.391689] device-mapper: uevent: version 1.0.3
+[    2.397486] device-mapper: ioctl: 4.35.0-ioctl (2016-06-23) initialised: dm-devel@redhat.com
+[    2.407201] Bluetooth: HCI UART driver ver 2.3
+[    2.412226] Bluetooth: HCI UART protocol H4 registered
+[    2.418023] Bluetooth: HCI UART protocol LL registered
+[    2.423814] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[    2.435096] sunxi-mmc sdc2: SD/MMC/SDIO Host Controller Driver(v3.35 2019-12-11 14:29)
+[    2.444138] sunxi-mmc sdc2: ***ctl-spec-caps*** 8
+[    2.450486] sunxi-mmc sdc2: No vdmmc regulator found
+[    2.456090] sunxi-mmc sdc2: No vd33sw regulator found
+[    2.461789] sunxi-mmc sdc2: No vd18sw regulator found
+[    2.467480] sunxi-mmc sdc2: No vq33sw regulator found
+[    2.473174] sunxi-mmc sdc2: No vq18sw regulator found
+[    2.479464] sunxi-mmc sdc2: set host busy
+[    2.484086] mmc:failed to get gpios
+[    2.488299] sunxi-mmc sdc2: sdc set ios:clk 0Hz bm PP pm UP vdd 23 width 1 timing LEGACY(SDR12) dt B
+[    2.514588] sunxi-mmc sdc2: sdc set ios:clk 400000Hz bm PP pm ON vdd 23 width 1 timing LEGACY(SDR12) dt B
+[    2.541263] sunxi-mmc sdc2: detmode:alway in(non removable)
+[    2.541289] sunxi-mmc sdc2: sdc set ios:clk 400000Hz bm PP pm ON vdd 23 width 1 timing LEGACY(SDR12) dt B
+[    2.549687] sunxi-mmc sdc2: sdc set ios:clk 400000Hz bm PP pm ON vdd 23 width 1 timing LEGACY(SDR12) dt B
+[    2.550759] sunxi-mmc sdc2: sdc set ios:clk 400000Hz bm OD pm ON vdd 23 width 1 timing LEGACY(SDR12) dt B
+[    2.561614] sunxi-mmc sdc2: sdc set ios:clk 400000Hz bm OD pm ON vdd 23 width 1 timing LEGACY(SDR12) dt B
+[    2.561677] sunxi-mmc sdc2: sdc set ios:clk 400000Hz bm OD pm ON vdd 23 width 1 timing LEGACY(SDR12) dt B
+[    2.574519] sunxi-mmc sdc2: sdc set ios:clk 400000Hz bm OD pm ON vdd 23 width 1 timing LEGACY(SDR12) dt B
+[    2.619041] sun50iw9p1-pinctrl pio: expect_func as:uart0_jtag, but muxsel(3) is func:jtag
+[    2.628266] sun50iw9p1-pinctrl pio: expect_func as:uart0_jtag, but muxsel(3) is func:jtag
+[    2.637503] sun50iw9p1-pinctrl pio: expect_func as:uart0_jtag, but muxsel(3) is func:uart0
+[    2.646830] sun50iw9p1-pinctrl pio: expect_func as:uart0_jtag, but muxsel(3) is func:jtag
+[    2.656064] sun50iw9p1-pinctrl pio: expect_func as:uart0_jtag, but muxsel(3) is func:uart0
+[    2.665379] sunxi-mmc sdc2: sdc set ios:clk 400000Hz bm PP pm ON vdd 23 width 1 timing LEGACY(SDR12) dt B
+[    2.676276] sun50iw9p1-pinctrl pio: expect_func as:uart0_jtag, but muxsel(3) is func:jtag
+[    2.685866] sunxi-mmc sdc0: SD/MMC/SDIO Host Controller Driver(v3.35 2019-12-11 14:29)
+[    2.694902] sunxi-mmc sdc0: ***ctl-spec-caps*** 8
+[    2.701583] sunxi-mmc sdc2: sdc set ios:clk 400000Hz bm PP pm ON vdd 23 width 1 timing MMC-HS(SDR20) dt B
+[    2.702750] random: fast init done
+[    2.703408] sunxi-mmc sdc0: No vqmmc regulator found
+[    2.703414] sunxi-mmc sdc0: No vdmmc regulator found
+[    2.704052] sunxi-mmc sdc0: set host busy
+[    2.704145] sunxi-mmc sdc0: Got CD GPIO
+[    2.704613] sunxi-mmc sdc0: sdc set ios:clk 0Hz bm PP pm UP vdd 23 width 1 timing LEGACY(SDR12) dt B
+[    2.704649] sunxi-mmc sdc0: no vqmmc,Check if there is regulator
+[    2.721188] sunxi-mmc sdc0: sdc set ios:clk 400000Hz bm PP pm ON vdd 23 width 1 timing LEGACY(SDR12) dt B
+[    2.738281] sunxi-mmc sdc0: detmode:gpio irq
+[    2.738311] sunxi-mmc sdc0: sdc set ios:clk 0Hz bm PP pm OFF vdd 0 width 1 timing LEGACY(SDR12) dt B
+[    2.740008] sunxi-mmc sdc1: SD/MMC/SDIO Host Controller Driver(v3.35 2019-12-11 14:29)
+[    2.740095] sunxi-mmc sdc1: ***ctl-spec-caps*** 8
+[    2.740179] sunxi-mmc sdc1: No vmmc regulator found
+[    2.740183] sunxi-mmc sdc1: No vqmmc regulator found
+[    2.740187] sunxi-mmc sdc1: No vdmmc regulator found
+[    2.740191] sunxi-mmc sdc1: No vd33sw regulator found
+[    2.740195] sunxi-mmc sdc1: No vd18sw regulator found
+[    2.740199] sunxi-mmc sdc1: No vq33sw regulator found
+[    2.740203] sunxi-mmc sdc1: No vq18sw regulator found
+[    2.740900] sunxi-mmc sdc1: set host busy
+[    2.740985] mmc:failed to get gpios
+[    2.741326] sunxi-mmc sdc1: sdc set ios:clk 0Hz bm PP pm UP vdd 21 width 1 timing LEGACY(SDR12) dt B
+[    2.757929] sunxi-mmc sdc1: sdc set ios:clk 400000Hz bm PP pm ON vdd 21 width 1 timing LEGACY(SDR12) dt B
+[    2.774591] sunxi-mmc sdc1: detmode:manually by software
+[    2.775432] sunxi-mmc sdc1: smc 2 p1 err, cmd 52, RTO !!
+[    2.775517] FD655: Fd655 Driver init.
+[    2.775968] FD655: fd655_driver_probe
+[    2.776020] FD655: fd655_driver_probe
+[    2.776272] sunxi-mmc sdc1: smc 2 p1 err, cmd 52, RTO !!
+[    2.776309] sunxi-mmc sdc1: sdc set ios:clk 400000Hz bm PP pm ON vdd 21 width 1 timing LEGACY(SDR12) dt B
+[    2.777606] FD655: register_fd655_driver: Successed to add fd655  module
+[    2.777975] FD655: ====================Command opne in probe=============
+[    2.778904] sunxi-mmc sdc1: sdc set ios:clk 400000Hz bm PP pm ON vdd 21 width 1 timing LEGACY(SDR12) dt B
+[    2.779557] FD655: ====================Display boot in probe=============
+[    2.779741] gpio user platform_driver_register  sucess
+[    2.779913] hidraw: raw HID events driver (C) Jiri Kosina
+[    2.780850] sunxi-mmc sdc1: smc 2 p1 err, cmd 5, RTO !!
+[    2.781705] sunxi-mmc sdc1: smc 2 p1 err, cmd 5, RTO !!
+[    2.782571] sunxi-mmc sdc1: smc 2 p1 err, cmd 5, RTO !!
+[    2.783507] sunxi-mmc sdc1: smc 2 p1 err, cmd 5, RTO !!
+[    2.783548] sunxi-mmc sdc1: sdc set ios:clk 0Hz bm PP pm OFF vdd 0 width 1 timing LEGACY(SDR12) dt B
+[    2.784725] usbcore: registered new interface driver usbhid
+[    2.784728] usbhid: USB HID core driver
+[    2.785203] ashmem: initialized
+[    2.787562] optee: probing for conduit method from DT.
+[    2.788285] optee: initialized driver
+[    2.788889] usbcore: registered new interface driver snd-usb-audio
+[    2.790566] [sunxi_hdmi_codec_init] driver and deivce register finished.
+[    2.791381] failed get gpio-spdif gpio from dts,spdif_gpio:-2
+[    2.794616] sunxi-internal-codec codec: pa_msleep_time get failed
+[    2.794622] [audio-codec]dachpf_cfg configurations missing or invalid.
+[    2.794635] lineout_vol:26, linein_gain:3, fmin_gain:3, digital_vol:0, adcdrc_cfg:0, adchpf_cfg:0, dacdrc_cfg:0, dachpf_cfg:0, ramp_func_used:1, pa_msleep_time:160, pa_ctl_level:0, gpio-spk:0
+[    2.797093] sunxi-codec-machine sndcodec: sun50iw9-codec <-> cpudai mapping ok
+[    2.799270] sndhdmi sndhdmi: ASoC: CPU DAI (null) not registered
+[    2.799279] sndhdmi sndhdmi: snd_soc_register_card() failed: -517
+[    2.802443] sndspdif sndspdif: spdif-hifi <-> spdif mapping ok
+[    2.805891] sunxi-ahub-cpudai 5097000.cpudai3-controller: ahub cpudai id invalid
+[    2.805912] sunxi-ahub-cpudai: probe of 5097000.cpudai3-controller failed with error -22
+[    2.806515] sun50iw9p1-pinctrl pio: expect_func as:h_pcm0, but muxsel(4) is func:h_i2s0
+[    2.806530] sun50iw9p1-pinctrl pio: expect_func as:h_pcm0, but muxsel(4) is func:h_i2s0
+[    2.806542] sun50iw9p1-pinctrl pio: expect_func as:h_pcm0, but muxsel(4) is func:h_i2s0
+[    2.806556] sun50iw9p1-pinctrl pio: expect_func as:h_pcm0, but muxsel(4) is func:h_i2s0
+[    2.806568] sun50iw9p1-pinctrl pio: expect_func as:h_pcm0, but muxsel(4) is func:h_i2s0
+[    2.810066] sndahub sndahub: sunxi-ahub-aif1 <-> 5097000.cpudai0-controller mapping ok
+[    2.812082] sndahub sndahub: sunxi-ahub-aif2 <-> 5097000.cpudai1-controller mapping ok
+[    2.813357] sndahub sndahub: sunxi-ahub-aif3 <-> 5097000.cpudai2-controller mapping ok
+[    2.816628] pktgen: Packet Generator for packet performance testing. Version: 2.75
+[    2.821445] u32 classifier
+[    2.821448]     Actions configured
+[    2.821458] Netfilter messages via NETLINK v0.30.
+[    2.821516] nfnl_acct: registering with nfnetlink.
+[    2.821895] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[    2.822139] ctnetlink v0.93: registering with nfnetlink.
+[    2.822765] xt_time: kernel timezone is -0000
+[    2.822871] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    2.823587] gre: GRE over IPv4 demultiplexor driver
+[    2.823591] ip_gre: GRE over IPv4 tunneling driver
+[    2.825031] IPv4 over IPsec tunneling driver
+[    2.832873] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.833134] arp_tables: arp_tables: (C) 2002 David S. Miller
+[    2.837345] Initializing XFRM netlink socket
+[    2.837383] IPsec XFRM device driver
+[    2.838284] NET: Registered protocol family 10
+[    2.840299] mip6: Mobile IPv6
+[    2.840337] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    2.852717] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    2.854347] NET: Registered protocol family 17
+[    2.854383] NET: Registered protocol family 15
+[    2.854541] l2tp_core: L2TP core driver, V2.0
+[    2.854555] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    2.862314] Registered cp15_barrier emulation handler
+[    2.862329] Registered setend emulation handler
+[    2.863394] registered taskstats version 1
+[    2.864176] HDMI 2.0 driver init start!
+[    2.864187] boot_hdmi=true
+[    2.864930] Can not find the node of esm
+[    2.864949] ERROR: pinctrl_get for HDMI2.0 DDC fail
+[    2.865045] Get hdmi_power0:vcc-hdmi
+[    2.865070] 6000000.hdmi supply vcc-hdmi not found, using dummy regulator
+[    2.865216] Get hdmi_power1:vdd-hdmi
+[    2.865228] 6000000.hdmi supply vdd-hdmi not found, using dummy regulator
+[    2.866795] hdmi_cec_init
+[    2.867600] HDMI2.0 module init end
+[    2.867860] [DISP] disp_device_attached,line:147:
+[    2.867861] attached ok, mgr0<-->device0, type=4
+[    2.867869] [HDMI receive params]: tv mode: 0xa format:0x1 data bits:0x0 eotf:0x4 cs:0x101 dvi_hdmi:2 range:2 scan:0 aspect_ratio:8
+[    2.867883] [DISP] disp_hdmi_set_mode,line:648:
+[    2.867883] hdmi_set_mode is null!
+[    2.868306] tv_probe()1435 - of_property_read_string tv_power failed!
+[    2.869357] tv_probe()1435 - of_property_read_string tv_power failed!
+[    2.869379] tv: probe of tv failed with error -22
+[    2.956191] sunxi-thermal 5070400.thermal_sensor: avcc is not calibrated
+[    2.959989] cpu cpu1: opp_list_debug_create_link: Failed to create link
+[    2.959997] cpu cpu1: _add_opp_dev: Failed to register opp debugfs (-12)
+[    2.960030] cpu cpu2: opp_list_debug_create_link: Failed to create link
+[    2.960035] cpu cpu2: _add_opp_dev: Failed to register opp debugfs (-12)
+[    2.960064] cpu cpu3: opp_list_debug_create_link: Failed to create link
+[    2.960069] cpu cpu3: _add_opp_dev: Failed to register opp debugfs (-12)
+[    2.963764] sndhdmi sndhdmi: audiohdmi-dai <-> sunxi-ahub-cpu-aif1 mapping ok
+[    2.964737] get det_vbus is fail, 84
+[    2.964740] get id is fail, 84
+[    2.966636] sunxi-rtc rtc: setting system clock to 1970-01-01 00:00:08 UTC (8)
+[    2.967253] snddaudio snddaudio0: codec: snd-soc-dummy, codec_dai: snd-soc-dummy-dai.
+[    2.967585] snddaudio snddaudio0: snd-soc-dummy-dai <-> ahub_daudio0 mapping ok
+[    2.969631] gpio_encrypt_probe
+[    2.970133] ALSA device list:
+[    2.970137]   #0: audiocodec
+[    2.970140]   #1: sndspdif
+[    2.970142]   #2: sndahub
+[    2.970143]   #3: sndhdmi
+[    2.970145]   #4: snddaudio0
+[    3.271225] HDMI cable is connected
+[    3.538789] sunxi-mmc sdc2: sdc set ios:clk 50000000Hz bm PP pm ON vdd 23 width 1 timing MMC-HS(SDR20) dt B
+[    3.539729] Freeing unused kernel memory: 2752K
+[    3.550231] init: init first stage started!
+[    3.551276] init: [libfs_mgr]ReadFstabFromDt(): failed to read fstab from dt
+[    3.553194] init: Using Android DT directory /proc/device-tree/firmware/android/
+[    3.576386] sunxi-mmc sdc2: sdc set ios:clk 50000000Hz bm PP pm ON vdd 23 width 8 timing MMC-HS(SDR20) dt B
+[    3.588271] mmc0: new high speed MMC card at address 0001
+[    3.595243] mmcblk0: mmc0:0001 SEM32G 29.1 GiB
+[    3.604147] mmcblk0boot0: mmc0:0001 SEM32G partition 1 4.00 MiB
+[    3.614738] mmcblk0boot1: mmc0:0001 SEM32G partition 2 4.00 MiB
+[    3.625174] mmcblk0rpmb: mmc0:0001 SEM32G partition 3 4.00 MiB
+[    3.634429]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17
+[    3.657495] init: [libfs_mgr]Created logical partition system on device /dev/block/dm-0
+[    3.668695] init: [libfs_mgr]Created logical partition vendor on device /dev/block/dm-1
+[    3.680001] init: [libfs_mgr]Created logical partition product on device /dev/block/dm-2
+[    3.690401] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/by-name/metadata
+[    3.703434] EXT4-fs (mmcblk0p11): mounted filesystem with ordered data mode. Opts: errors=panic
+[    3.713424] init: [libfs_mgr]__mount(source=/dev/block/by-name/metadata,target=/metadata,type=ext4)=0: Success
+[    3.726074] init: GSI not detected, proceeding with normal boot
+[    3.734717] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/dm-0
+[    3.746504] EXT4-fs (dm-0): mounted filesystem without journal. Opts: barrier=1
+[    3.766303] EXT4-fs (dm-1): mounted filesystem without journal. Opts: barrier=1
+[    3.779776] EXT4-fs (dm-2): mounted filesystem without journal. Opts: barrier=1
+[    3.811109] init: 12 output lines suppressed due to ratelimiting
+[    3.830394] random: init: uninitialized urandom read (40 bytes read)
+[    4.033561] random: init: uninitialized urandom read (40 bytes read)
+[    4.064800] init: Loading SELinux policy
+[    4.092768] SELinux: 8192 avtab hash slots, 22735 rules.
+[    4.112685] SELinux: 8192 avtab hash slots, 22735 rules.
+[    4.118675] SELinux:  1 users, 4 roles, 1402 types, 0 bools, 1 sens, 1024 cats
+[    4.126801] SELinux:  97 classes, 22735 rules
+[    4.135579] SELinux:  Completing initialization.
+[    4.140792] SELinux:  Setting up existing superblocks.
+[    4.197790] audit: type=1403 audit(9.726:2): policy loaded auid=4294967295 ses=4294967295
+[    4.207236] selinux: SELinux: Loaded policy from /vendor/etc/selinux/precompiled_sepolicy
+[    4.207236]
+[    4.225897] selinux: SELinux:  Skipping /product/etc/selinux/product_file_contexts:  empty file
+[    4.225897]
+[    4.237715] selinux: SELinux: Loaded file_contexts
+[    4.237715]
+[    4.251822] random: init: uninitialized urandom read (40 bytes read)
+[    4.303322] init: init second stage started!
+[    4.346445] init: Using Android DT directory /proc/device-tree/firmware/android/
+[    4.361675] selinux: SELinux:  Skipping /product/etc/selinux/product_file_contexts:  empty file
+[    4.361675]
+[    4.373477] selinux: SELinux: Loaded file_contexts
+[    4.373477]
+[    4.380623] init: Running restorecon...
+[    4.408249] selinux: avc:  denied  { set } for  scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=1
+[    4.408249]
+[    4.429285] init: Couldn't load property file '/product_services/build.prop': open() failed: No such file or directory: No such file or directory
+[    4.444066] init: Couldn't load property file '/factory/factory.prop': open() failed: No such file or directory: No such file or directory
+[    4.459611] init: Setting product property ro.product.brand to 'google' (from ro.product.product.brand)
+[    4.470256] init: Setting product property ro.product.device to 'walleye' (from ro.product.product.device)
+[    4.719493] ueventd: ueventd started!
+[    4.728626] selinux: SELinux:  Skipping /product/etc/selinux/product_file_contexts:  empty file
+[    4.728626]
+[    4.740407] selinux: SELinux: Loaded file_contexts
+[    4.740407]
+[    4.747906] ueventd: Parsing file /ueventd.rc...
+[    4.755806] ueventd: Parsing file /vendor/ueventd.rc...
+[    4.764887] ueventd: Parsing file /odm/ueventd.rc...
+[    4.765228] apexd: Bootstrap subcommand detected
+[    4.775848] ueventd: Unable to read config file '/odm/ueventd.rc': open() failed: No such file or directory
+[    4.780208] apexd: Scanning /system/apex for embedded keys
+[    4.781968] apexd: Scanning /product/apex for embedded keys
+[    4.782132] apexd: ... does not exist. Skipping
+[    4.782273] apexd: Scanning /system/apex looking for APEX packages.
+[    4.782575] apexd: Found /system/apex/com.android.runtime.debug
+[    4.783433] apexd: Successfully bind-mounted flattened package /system/apex/com.android.runtime.debug on /apex/com.android.runtime@1
+[    4.783760] apexd: Found /system/apex/com.android.media
+[    4.784269] apexd: Skipped when bootstrapping
+[    4.784413] apexd: Found /system/apex/com.android.conscrypt
+[    4.789700] apexd: 9 output lines suppressed due to ratelimiting
+[    4.855323] ueventd: Parsing file /ueventd.sun50iw9p1.rc...
+[    4.861718] ueventd: Unable to read config file '/ueventd.sun50iw9p1.rc': open() failed: No such file or directory
+[    5.272724] ueventd: Coldboot took 0.397 seconds
+[    5.355999] Registered swp emulation handler
+[    5.410479] init: wait for '/dev/block/by-name/media_data' took 0ms
+[    5.424799] FAT-fs (mmcblk0p15): bogus number of reserved sectors
+[    5.432777] FAT-fs (mmcblk0p15): Can't find a valid FAT filesystem
+[    5.536815] EXT4-fs (mmcblk0p17): Ignoring removed nomblk_io_submit option
+[    5.554995] logd.auditd: start
+[    5.558677] logd.klogd: 5437496294
+[    5.576674] EXT4-fs (mmcblk0p17): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[    5.711687] e2fsck: e2fsck 1.44.4 (18-Aug-2018)
+[    5.711687]
+[    5.718510] e2fsck: /dev/block/by-name/UDISK: clean, 22569/1720320 files, 800354/6871035 blocks
+[    5.718510]
+[    5.738217] EXT4-fs (mmcblk0p17): mounted filesystem with ordered data mode. Opts: discard
+[    5.750055] EXT4-fs (mmcblk0p7): Ignoring removed nomblk_io_submit option
+[    5.760568] EXT4-fs (mmcblk0p7): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[    5.819550] e2fsck: e2fsck 1.44.4 (18-Aug-2018)
+[    5.819550]
+[    5.826443] e2fsck: /dev/block/by-name/cache: clean, 14/40960 files, 6800/163840 blocks
+[    5.826443]
+[    5.838540] EXT4-fs (mmcblk0p7): Ignoring removed nomblk_io_submit option
+[    5.849155] EXT4-fs (mmcblk0p7): mounted filesystem with ordered data mode. Opts: barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,errors=panic
+[    5.893792] zram0: detected capacity change from 0 to 3027001344
+[    5.933219] mkswap: Swapspace size: 2956052k, UUID=66877379-59dc-4db0-8cc5-5fa0884d900d
+[    5.943656] Adding 2956052k swap on /dev/block/zram0.  Priority:-1 extents:1 across:2956052k SS
+console:/ $ [    6.538989] mali_kbase: loading out-of-tree module taints kernel.
+[    6.563219] mali gpu: Regulators probed: 0
+[    6.567896] mali gpu: Clocks probed: 2
+[    6.573041] mali gpu: [950mv-600MHz] bak[950mv-600MHz] inde_power:0 idle:1 dvfs:0
+[    6.581612] mali gpu: GPU identified as 0x3 arch 7.0.9 r0p0 status 0
+[    6.589033] mali gpu: No memory group manager is configured
+[    6.596325] mali gpu: Using configured power model mali-simple-power-model, and fallback mali-simple-power-model
+[    6.609558] mali gpu: Probed as mali0
+[    6.710183] usbcore: registered new interface driver uvcvideo
+[    6.716655] USB Video Class driver (1.1.1)
+[    6.905264] apexd: Marking APEXd as starting
+[    6.911236] apexd: Scanning /system/apex for embedded keys
+[    6.920402] apexd: Scanning /product/apex for embedded keys
+[    6.926977] apexd: ... does not exist. Skipping
+[    6.932349] apexd: Populating APEX database from mounts...
+[    6.939305] apexd: Failed to walk /product/apex : Can't open /product/apex for reading : No such file or directory
+[    6.952150] apexd: Found "/apex/com.android.runtime@1"
+[    6.958256] apexd: Found "/apex/com.android.tzdata@290000000"
+[    6.965152] apexd: 2 packages restored.
+[    6.969802] apexd: Scanning /data/apex/sessions looking for sessions to be activated.
+[    7.082765] vdc: Waited 0ms for vold
+[    7.179105] type=1400 audit(12.710:3): avc: denied { setattr } for comm="init" name="audio_d" dev="mmcblk0p17" ino=1130497 scontext=u:r:vendor_init:s0 tcontext=u:object_r:audio_rw_data_file:s0 tclass=dir permissive=1
+[    7.359507] logd.daemon: reinit
+[    7.805666] file system registered
+[    7.853076] sunxi-bt soc@03000000:bt: block state already is 1
+[    7.869449]
+[    7.869449] rmmod_host_driver
+[    7.869449]
+[    7.876183] [ehci0-controller]: sunxi_usb_disable_ehci
+[    7.882064] [sunxi-ehci0]: remove, pdev->name: 5101000.ehci0-controller, sunxi_ehci: 0xffffff80092636f0
+[    7.892701] sunxi-ehci 5101000.ehci0-controller: remove, state 4
+[    7.899535] usb usb1: USB disconnect, device number 1
+[    7.906378] sunxi-ehci 5101000.ehci0-controller: USB bus 1 deregistered
+[    7.913928] [ohci0-controller]: sunxi_usb_disable_ohci
+[    7.919762] [sunxi-ohci0]: remove, pdev->name: 5101000.ohci0-controller, sunxi_ohci: 0xffffff80092629d0
+[    7.930342] sunxi-ohci 5101000.ohci0-controller: remove, state 4
+[    7.937164] usb usb5: USB disconnect, device number 1
+[    7.943985] sunxi-ohci 5101000.ohci0-controller: USB bus 5 deregistered
+[    7.951524]
+[    7.951524] insmod_host_driver
+[    7.951524]
+[    7.958304] [ehci0-controller]: sunxi_usb_enable_ehci
+[    7.964033] [sunxi-ehci0]: probe, pdev->name: 5101000.ehci0-controller, sunxi_ehci: 0xffffff80092636f0, 0x:ffffff8009d7e000, irq_no:11d
+[    7.977764] sunxi-ehci 5101000.ehci0-controller: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+[    7.988002] sunxi-ehci 5101000.ehci0-controller: new USB bus registered, assigned bus number 1
+[    8.000127] sunxi-ehci 5101000.ehci0-controller: irq 285, io mem 0xffffffc0fb0b0000
+[    8.021244] sunxi-ehci 5101000.ehci0-controller: USB 0.0 started, EHCI 1.00
+[    8.031491] hub 1-0:1.0: USB hub found
+[    8.035875] hub 1-0:1.0: 1 port detected
+[    8.041145] [ohci0-controller]: sunxi_usb_enable_ohci
+[    8.046907] [sunxi-ohci0]: probe, pdev->name: 5101000.ohci0-controller, sunxi_ohci: 0xffffff80092629d0
+[    8.057414] sunxi-ohci 5101000.ohci0-controller: SW USB2.0 'Open' Host Controller (OHCI) Driver
+[    8.067293] sunxi-ohci 5101000.ohci0-controller: new USB bus registered, assigned bus number 5
+[    8.077088] sunxi-ohci 5101000.ohci0-controller: irq 286, io mem 0xffffffc0fb0b0000
+[    8.110163] type=1400 audit(12.710:3): avc: denied { setattr } for comm="init" name="audio_d" dev="mmcblk0p17" ino=1130497 scontext=u:r:vendor_init:s0 tcontext=u:object_r:audio_rw_data_file:s0 tclass=dir permissive=1
+[    8.132164] type=1400 audit(13.640:4): avc: denied { create } for comm="audio@2.0-servi" scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=tcp_socket permissive=1
+[    8.151659] type=1400 audit(13.640:4): avc: denied { create } for comm="audio@2.0-servi" scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=tcp_socket permissive=1
+[    8.157047] hub 5-0:1.0: USB hub found
+[    8.158789] hub 5-0:1.0: 1 port detected
+[    8.181371] type=1400 audit(13.640:5): avc: denied { setopt } for comm="audio@2.0-servi" scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=tcp_socket permissive=1
+[    8.200457] type=1400 audit(13.640:5): avc: denied { setopt } for comm="audio@2.0-servi" scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=tcp_socket permissive=1
+[    8.219347] type=1400 audit(13.640:6): avc: denied { bind } for comm="audio@2.0-servi" scontext=u:r:hal_audio_default:s0 tcontext=u:r:hal_audio_default:s0 tclass=tcp_socket permissive=1
+[    8.274004] healthd: No battery devices found
+[    8.284880] healthd: battery none chg=
+Gatekeeper_TA_CreateEntryPoint
+[    8.442030] read descriptors
+[    8.445345] read strings
+[    8.470616] FAT-fs (mmcblk0p16): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[    9.306914] init: Service 'bpfloader' (pid 2085) exited with status 0
+[    9.376152] init: Service 'usbd' (pid 2115) exited with status 0
+[    9.423737] init: processing action (init.svc.mediadrm=running) from (/vendor/etc/init/android.hardware.drm@1.2-service-lazy.widevine.rc:1)
+[   10.274406] input: sunxi-ir-uinput as /devices/virtual/input/input2
+[   11.193595] Do not support any basic 3d video format
+[   11.199239] Do not support any basic 3d video format
+[   11.204908] Do not support any basic 3d video format
+[   12.520685] random: crng init done
+[   12.524495] random: 7 urandom warning(s) missed due to ratelimiting
+[   13.399993] init: Received control message 'start' for 'bootanim' from pid: 2022 (/system/bin/surfaceflinger)
+[   13.413135] init: starting service 'bootanim'...
+[   14.656558] logd: logdr: UID=1036 GID=1023 PID=2116 b tail=0 logMask=19 pid=0 start=18089547000ns timeout=0ns
+[   15.362451] healthd: battery none chg=
+[   16.503040] init: Received control message 'interface_start' for 'android.hardware.light@2.0::ILight/default' from pid: 1871 (/system/bin/hwservicemanager)
+[   16.520101] init: starting service 'vendor.light-hal-2-0'...
+[   16.530654] init: Received control message 'interface_start' for 'android.hardware.light@2.0::ILight/default' from pid: 1871 (/system/bin/hwservicemanager)
+[   18.761985] healthd: battery none chg=
+[   18.770833] healthd: battery none chg=
+[   19.396585] init: processing action (sys.sysctl.extra_free_kbytes=*) from (/init.rc:806)
+[   20.606663] acc_open
+[   20.609201] acc_release
+[   20.627776] type=1400 audit(15.933:11): avc: denied { getattr } for comm="app_process" path="/dev/__properties__/u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=258 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=1
+[   20.658357] type=1400 audit(1634011081.553:12): avc: denied { read write } for comm="Binder:2098_1" name="vplay_flag" dev="sysfs" ino=20096 scontext=u:r:mediaserver:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   20.681873] type=1400 audit(1634011081.553:12): avc: denied { read write } for comm="Binder:2098_1" name="vplay_flag" dev="sysfs" ino=20096 scontext=u:r:mediaserver:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   20.706980] type=1400 audit(1634011081.553:13): avc: denied { open } for comm="Binder:2098_1" path="/sys/class/fd655/vplay_flag" dev="sysfs" ino=20096 scontext=u:r:mediaserver:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   20.814345] type=1400 audit(1634011081.553:13): avc: denied { open } for comm="Binder:2098_1" path="/sys/class/fd655/vplay_flag" dev="sysfs" ino=20096 scontext=u:r:mediaserver:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   20.838495] type=1400 audit(1634011081.736:14): avc: denied { read } for comm="writer" name="u:object_r:default_prop:s0" dev="tmpfs" ino=251 scontext=u:r:hal_audio_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+[   20.859577] raw_flag value is 1
+[   20.859610] sunxi->update_param:1
+[   20.859673] HDMI Audio Enable Successfully
+[   20.880419] type=1400 audit(1634011081.736:14): avc: denied { read } for comm="writer" name="u:object_r:default_prop:s0" dev="tmpfs" ino=251 scontext=u:r:hal_audio_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+[   20.904618] type=1400 audit(1634011081.740:15): avc: denied { open } for comm="writer" path="/dev/__properties__/u:object_r:default_prop:s0" dev="tmpfs" ino=251 scontext=u:r:hal_audio_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+[   20.934171] type=1400 audit(1634011081.740:15): avc: denied { open } for comm="writer" path="/dev/__properties__/u:object_r:default_prop:s0" dev="tmpfs" ino=251 scontext=u:r:hal_audio_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+[   20.960667] type=1400 audit(1634011081.740:16): avc: denied { getattr } for comm="writer" path="/dev/__properties__/u:object_r:default_prop:s0" dev="tmpfs" ino=251 scontext=u:r:hal_audio_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+[   21.435388] init: Received control message 'interface_start' for 'android.hardware.wifi@1.0::IWifi/default' from pid: 1871 (/system/bin/hwservicemanager)
+[   21.453483] init: starting service 'vendor.wifi_hal_legacy'...
+[   21.465808] init: Received control message 'interface_start' for 'android.hardware.wifi@1.0::IWifi/default' from pid: 1871 (/system/bin/hwservicemanager)
+[   21.748090] libphy: gmac1: probed
+[   21.827913] sunxi-gmac gmac1 eth0: eth0: Type(6) PHY ID 00441400 at 0 IRQ poll (gmac1-0:00)
+[   25.132560] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   25.971318] binder: undelivered transaction 16353, process died.
+[   25.980792] init: Service 'vendor.light-hal-2-0' (pid 2352) exited with status 0
+[   30.389338] type=1400 audit(1634011084.603:20): avc: denied { getattr } for comm="HwBinder:2106_3" path="/dev/__properties__/u:object_r:system_prop:s0" dev="tmpfs" ino=324 scontext=u:r:mediacodec:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=1
+[   30.415984] type=1400 audit(1634011091.316:21): avc: denied { read write } for comm="Binder:2098_3" name="vplay_flag" dev="sysfs" ino=20096 scontext=u:r:mediaserver:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   30.438927] type=1400 audit(1634011091.316:21): avc: denied { read write } for comm="Binder:2098_3" name="vplay_flag" dev="sysfs" ino=20096 scontext=u:r:mediaserver:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   30.461651] type=1400 audit(1634011091.316:22): avc: denied { open } for comm="Binder:2098_3" path="/sys/class/fd655/vplay_flag" dev="sysfs" ino=20096 scontext=u:r:mediaserver:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   30.497927] init: Service 'bootanim' (pid 2277) exited with status 0
+[   30.588685] init: processing action (sys.usb.config=none && sys.usb.configfs=1) from (/vendor/etc/init/hw/init.sun50iw9p1.usb.rc:64)
+[   30.606408] init: processing action (sys.usb.config=none && sys.usb.configfs=1) from (/init.usb.configfs.rc:1)
+[   30.610928] sdcardfs version 2.0
+[   30.610934] sdcardfs: dev_name -> /data/media
+[   30.610937] sdcardfs: options -> fsuid=1023,fsgid=1023,multiuser,derive_gid,default_normal,unshared_obb,mask=6,userid=0,gid=1015
+[   30.610942] sdcardfs: mnt -> ffffffc0f89cec60
+[   30.611036] sdcardfs: mounted on top of /data/media type ext4
+[   30.613188] Remount options were mask=23,gid=9997 for vfsmnt ffffffc0c76621e0.
+[   30.613202] sdcardfs : options - debug:1
+[   30.613205] sdcardfs : options - gid:9997
+[   30.613207] sdcardfs : options - mask:23
+[   30.613749] Remount options were mask=7,gid=9997 for vfsmnt ffffffc0c7662fe0.
+[   30.613762] sdcardfs : options - debug:1
+[   30.613765] sdcardfs : options - gid:9997
+[   30.613767] sdcardfs : options - mask:7
+[   30.614314] Remount options were mask=7,gid=9997 for vfsmnt ffffffc0c7663de0.
+[   30.614323] sdcardfs : options - debug:1
+[   30.614325] sdcardfs : options - gid:9997
+[   30.614327] sdcardfs : options - mask:7
+[   30.724124] android_work: did not send uevent (0 0           (null))
+[   30.726016] init: Sending signal 9 to service 'adbd' (pid 2058) process group...
+[   30.766102] libprocessgroup: Successfully killed process cgroup uid 0 pid 2058 in 39ms
+[   30.781616] init: Service 'adbd' (pid 2058) received signal 9
+[   30.794958] init: processing action (sys.boot_completed=1) from (/init.rc:800)
+[   30.796988] selinux: SELinux: Skipping restorecon on directory(/data/system_ce/0)
+[   30.796988]
+[   30.815529] init: processing action (sys.boot_completed=1) from (/vendor/etc/init/hw/init.device.rc:69)
+[   30.953188] type=1400 audit(1634011091.316:22): avc: denied { open } for comm="Binder:2098_3" path="/sys/class/fd655/vplay_flag" dev="sysfs" ino=20096 scontext=u:r:mediaserver:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   30.982739] type=1400 audit(1634011091.880:23): avc: denied { write } for comm="preinstall" name="panel" dev="sysfs" ino=20098 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   31.024073] type=1400 audit(1634011091.880:23): avc: denied { write } for comm="preinstall" name="panel" dev="sysfs" ino=20098 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   31.040582] read descriptors
+[   31.040600] read strings
+[   31.042002] init: processing action (sys.usb.config=mtp,adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1) from (/init.usb.configfs.rc:35)
+[   31.068089] type=1400 audit(1634011091.903:24): avc: denied { open } for comm="preinstall" path="/sys/class/fd655/panel" dev="sysfs" ino=20098 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   31.249814] type=1400 audit(1634011091.903:24): avc: denied { open } for comm="preinstall" path="/sys/class/fd655/panel" dev="sysfs" ino=20098 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   31.272631] type=1400 audit(1634011092.176:25): avc: denied { getattr } for comm="preinstall" path="/system/bin/blkid" dev="dm-0" ino=595 scontext=u:r:shell:s0 tcontext=u:object_r:blkid_exec:s0 tclass=file permissive=1
+[   31.323566] audit: audit_lost=1 audit_rate_limit=5 audit_backlog_limit=64
+[   31.333116] audit: rate limit exceeded
+[   31.473358] selinux: avc:  denied  { set } for property=persist.tegra.hdmi pid=3449 uid=0 gid=0 scontext=u:r:shell:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=1
+[   31.473358]
+[   31.678455] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[   31.690338] EXT4-fs (dm-0): re-mounted. Opts: block_validity,delalloc,barrier,user_xattr
+[   31.823829] 1 ==========================else
+[   32.075448] init: Service 'preinstall' (pid 3393) exited with status 0
+[   33.510537] audit: audit_lost=19 audit_rate_limit=5 audit_backlog_limit=64
+[   33.535175] audit: rate limit exceeded
+[   34.922250] audit: audit_lost=22 audit_rate_limit=5 audit_backlog_limit=64
+[   34.936931] audit: rate limit exceeded
+[   35.507930] init: Service 'appsdisable' (pid 3384) exited with status 0
+[   35.698944] type=1400 audit(1634011095.790:63): avc: denied { open } for comm="m.www.intallapp" path="/mnt/media_rw" dev="tmpfs" ino=442 scontext=u:r:system_app:s0 tcontext=u:object_r:mnt_media_rw_file:s0 tclass=dir permissive=1
+[   36.010385] type=1400 audit(1634011096.626:68): avc: granted { execute } for comm="Thread-2" name="libestool2.so" dev="mmcblk0p17" ino=1164230 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file app=com.estrongs.android.pop
+[   36.046898] type=1400 audit(1634011096.626:68): avc: granted { execute } for comm="Thread-2" name="libestool2.so" dev="mmcblk0p17" ino=1164230 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file app=com.estrongs.android.pop
+[   36.080785] type=1400 audit(1634011096.653:69): avc: granted { execute_no_trans } for comm="Thread-2" path="/data/data/com.estrongs.android.pop/files/libestool2.so" dev="mmcblk0p17" ino=1164230 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file app=com.estrongs.android.pop
+[   36.114454] type=1400 audit(1634011096.653:69): avc: granted { execute_no_trans } for comm="Thread-2" path="/data/data/com.estrongs.android.pop/files/libestool2.so" dev="mmcblk0p17" ino=1164230 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file app=com.estrongs.android.pop
+[   36.166393] type=1400 audit(1634011096.656:70): avc: granted { execute } for comm="libestool2.so" path="/data/data/com.estrongs.android.pop/files/libestool2.so" dev="mmcblk0p17" ino=1164230 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file app=com.estrongs.android.pop
+[   36.204217] type=1400 audit(1634011096.656:70): avc: granted { execute } for comm="libestool2.so" path="/data/data/com.estrongs.android.pop/files/libestool2.so" dev="mmcblk0p17" ino=1164230 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file app=com.estrongs.android.pop
+[   36.236853] type=1400 audit(1634011096.690:71): avc: denied { read } for comm="FD655_Demo" name="vpause_flag" dev="sysfs" ino=20097 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   36.260898] type=1400 audit(1634011096.690:71): avc: denied { read } for comm="FD655_Demo" name="vpause_flag" dev="sysfs" ino=20097 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   36.283929] type=1400 audit(1634011096.690:72): avc: denied { open } for comm="FD655_Demo" path="/sys/class/fd655/vpause_flag" dev="sysfs" ino=20097 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   36.607968] audit: audit_lost=27 audit_rate_limit=5 audit_backlog_limit=64
+[   36.618893] audit: rate limit exceeded
+[   37.197905] apexd: Can't open /product/apex for reading : No such file or directory
+[   38.400583] init: Received control message 'start' for 'gsid' from pid: 2288 (system_server)
+[   38.415837] init: starting service 'gsid'...
+[   38.883833] init: Received control message 'stop' for 'gsid' from pid: 2288 (system_server)
+[   38.893553] init: Sending signal 9 to service 'gsid' (pid 4384) process group...
+[   38.908607] libprocessgroup: Successfully killed process cgroup uid 0 pid 4384 in 6ms
+[   38.919633] init: Service 'gsid' (pid 4384) received signal 9

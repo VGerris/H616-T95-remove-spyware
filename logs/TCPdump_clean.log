@@ -1,0 +1,28 @@
+root@NOT_D-link_DIR-860L:~# tcpdump src 192.168.10.173 -i lan1
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on lan1, link-type EN10MB (Ethernet), capture size 262144 bytes
+18:39:17.775397 ARP, Request who-has NOT_D-link_DIR-860L.lan tell 192.168.10.173, length 46
+18:39:17.775891 IP 192.168.10.173.60980 > NOT_D-link_DIR-860L.lan.853: Flags [S], seq 1779526942, win 29200, options [mss 1460,sackOK,TS val 4294885496 ecr 0,nop,wscale 7,tfo  cookiereq,nop,nop], length 0
+18:39:17.903756 IP 192.168.10.173.27378 > NOT_D-link_DIR-860L.lan.53: 39528+ A? www.google.cn. (31)
+18:39:17.996451 IP 192.168.10.173.58061 > NOT_D-link_DIR-860L.lan.53: 14746+ A? 2.android.pool.ntp.org. (40)
+18:39:18.008633 IP 192.168.10.173.46506 > ams17s12-in-f3.1e100.net.443: Flags [S], seq 1913634383, win 65535, options [mss 1460,sackOK,TS val 4294885566 ecr 0,nop,wscale 6], length 0
+18:39:18.011081 IP 192.168.10.173.48300 > ams17s12-in-f3.1e100.net.80: Flags [S], seq 3201159314, win 65535, options [mss 1460,sackOK,TS val 4294885567 ecr 0,nop,wscale 6], length 0
+18:39:18.025523 IP 192.168.10.173.46506 > ams17s12-in-f3.1e100.net.443: Flags [.], ack 554917878, win 1369, options [nop,nop,TS val 4294885571 ecr 2348084895], length 0
+18:39:18.027592 IP 192.168.10.173.48300 > ams17s12-in-f3.1e100.net.80: Flags [.], ack 3652753059, win 1369, options [nop,nop,TS val 4294885572 ecr 2348084898], length 0
+18:39:18.028186 IP 192.168.10.173.48300 > ams17s12-in-f3.1e100.net.80: Flags [P.], seq 0:211, ack 1, win 1369, options [nop,nop,TS val 4294885572 ecr 2348084898], length 211: HTTP: GET /generate_204 HTTP/1.1
+18:39:18.032771 IP 192.168.10.173.49942 > time.cloudflare.com.123: NTPv3, Client, length 48
+18:39:18.044446 IP 192.168.10.173.48300 > ams17s12-in-f3.1e100.net.80: Flags [.], ack 147, win 1386, options [nop,nop,TS val 4294885577 ecr 2348084914], length 0
+18:39:18.046425 IP 192.168.10.173.48300 > ams17s12-in-f3.1e100.net.80: Flags [F.], seq 211, ack 148, win 1386, options [nop,nop,TS val 4294885578 ecr 2348084914], length 0
+18:39:18.085966 IP 192.168.10.173.46506 > ams17s12-in-f3.1e100.net.443: Flags [P.], seq 0:517, ack 1, win 1369, options [nop,nop,TS val 4294885590 ecr 2348084895], length 517
+18:39:18.103471 IP 192.168.10.173.46506 > ams17s12-in-f3.1e100.net.443: Flags [.], ack 1401, win 1413, options [nop,nop,TS val 4294885595 ecr 2348084973], length 0
+18:39:18.104643 IP 192.168.10.173.46506 > ams17s12-in-f3.1e100.net.443: Flags [.], ack 2801, win 1457, options [nop,nop,TS val 4294885595 ecr 2348084973], length 0
+18:39:18.104785 IP 192.168.10.173.46506 > ams17s12-in-f3.1e100.net.443: Flags [.], ack 4300, win 1504, options [nop,nop,TS val 4294885595 ecr 2348084973], length 0
+18:39:18.248212 IP 192.168.10.173.46506 > ams17s12-in-f3.1e100.net.443: Flags [P.], seq 517:581, ack 4300, win 1504, options [nop,nop,TS val 4294885638 ecr 2348084973], length 64
+18:39:18.269230 IP 192.168.10.173.46506 > ams17s12-in-f3.1e100.net.443: Flags [P.], seq 581:814, ack 4300, win 1504, options [nop,nop,TS val 4294885645 ecr 2348085139], length 233
+18:39:18.285165 IP 192.168.10.173.46506 > ams17s12-in-f3.1e100.net.443: Flags [.], ack 5089, win 1547, options [nop,nop,TS val 4294885649 ecr 2348085155], length 0
+18:39:18.295228 IP 192.168.10.173.46506 > ams17s12-in-f3.1e100.net.443: Flags [P.], seq 814:838, ack 5090, win 1547, options [nop,nop,TS val 4294885652 ecr 2348085155], length 24
+18:39:18.296258 IP 192.168.10.173.46506 > ams17s12-in-f3.1e100.net.443: Flags [F.], seq 838, ack 5090, win 1547, options [nop,nop,TS val 4294885653 ecr 2348085155], length 0
+18:39:18.320480 IP 192.168.10.173.60986 > NOT_D-link_DIR-860L.lan.853: Flags [S], seq 2964198941, win 65535, options [mss 1460,sackOK,TS val 4294885660 ecr 0,nop,wscale 6,tfo  cookiereq,nop,nop], length 0
+18:39:18.646653 IP 192.168.10.173.60988 > NOT_D-link_DIR-860L.lan.853: Flags [S], seq 3517510333, win 65535, options [mss 1460,sackOK,TS val 4294885758 ecr 0,nop,wscale 6,tfo  cookiereq,nop,nop], length 0
+18:39:22.569819 ARP, Reply 192.168.10.173 is-at c4:2a:fe:81:49:91 (oui Unknown), length 46
+
